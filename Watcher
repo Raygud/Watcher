@@ -34,6 +34,21 @@ namespace VinImport
                 Console.WriteLine(ds.OutdoorTemp().ToString("N2") + "°C");
                 Console.Write("  Fugt: ");
                 Console.WriteLine(ds.OutdoorHumidity().ToString("N2") + "%");
+                
+                Console.WriteLine("\n       Lagerstatus");
+                Console.WriteLine("Varer under minimum:");
+                foreach (string line in ds.StockItemsUnderMin())
+                     Console.WriteLine(line);
+                     
+                Console.WriteLine("\n       Lagerstatus");
+                Console.WriteLine("Varer over maksimum:");
+                foreach (string line in ds.StockItemsOverMax())
+                     Console.WriteLine(line);
+                     
+                Console.WriteLine("\n       Lagerstatus");
+                Console.WriteLine("Mest solgte i dag:");
+                foreach (string line in ds.StockItemsMostSold())
+                     Console.WriteLine(line);
 
                     Console.WriteLine(DateTime.Now.ToString());
                     int mydelay = 2000;

@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace VinImport
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+      {
+            ConsoleKeyInfo afslut;
+            do
+            {
+                for (; ; )
+                { 
+                Console.Clear();
+                DVIService.monitorSoapClient ds = new DVIService.monitorSoapClient();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("\n       Temperatur og fugtighed \n");
+                Console.WriteLine("  Lager: ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("  Temp: ");
+                Console.WriteLine(ds.StockTemp().ToString("N2") + "°C");
+                Console.Write("  Fugt: ");
+                Console.WriteLine(ds.StockHumidity().ToString("N2") + "%");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("  Udenfor: ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("  Temp: ");
+                Console.WriteLine(ds.OutdoorTemp().ToString("N2") + "°C");
+                Console.Write("  Fugt: ");
+                Console.WriteLine(ds.OutdoorHumidity().ToString("N2") + "%");
+
+                    Console.WriteLine(DateTime.Now.ToString());
+                    int mydelay = 2000;
+                    Thread.Sleep(mydelay);
+                }
+
+                Console.Write("Tast ESC for at afslutte, eller andet for at fortsætte...");
+                afslut = Console.ReadKey();
+            } while (afslut.Key != ConsoleKey.Escape);
+        } 
+    }
+}

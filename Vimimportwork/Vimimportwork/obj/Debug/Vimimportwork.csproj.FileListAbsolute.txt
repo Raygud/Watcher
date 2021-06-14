@@ -1,0 +1,10 @@
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\bin\Debug\Vimimportwork.exe.config
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\bin\Debug\Vimimportwork.exe
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\bin\Debug\Vimimportwork.pdb
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.csprojAssemblyReference.cache
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.Form1.resources
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.Properties.Resources.resources
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.csproj.GenerateResource.cache
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.csproj.CoreCompileInputs.cache
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.exe
+C:\Users\Runig\source\repos\Vimimportwork\Vimimportwork\obj\Debug\Vimimportwork.pdb

@@ -47,7 +47,7 @@ namespace Vimimportwork
                 label12.ForeColor = Color.Red;
 
             }
-            if (b >= 8 && b <= 17)
+            if (b > 8 && b < 17)
             {
                 label13.ForeColor = Color.Green;
             }
@@ -57,7 +57,7 @@ namespace Vimimportwork
                 label13.ForeColor = Color.Red;
 
             }
-            if (c >= 9 && c <= 13)
+            if (c > 9 && c < 13)
             {
                 label15.ForeColor = Color.Green;
             }
@@ -68,7 +68,7 @@ namespace Vimimportwork
                 label15.ForeColor = Color.Red;
             }
 
-            if (c >= 8 && c <= 17)
+            if (c > 8 && c < 17)
             {
                 label15.ForeColor = Color.Green;
             }
